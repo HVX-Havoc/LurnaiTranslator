@@ -3,9 +3,10 @@ return {
     openButton = "Open Lurnai Hub",
     
     welcome = {
-        title = "Welcome to Lurnai Hub!",
-        remove = "Remove This Popup",
-        execute = "Execute Script"
+        welcome.title = "Welcome to Lurnai Hub!",
+        welcome.message = "Thank you for choosing Lurnai Hub!\nWe're excited for you using our script!",
+        welcome.decline = "Maybe Later",
+        welcome.accept = "Get Started"
     },
     
     keySystem = {
