@@ -4,8 +4,9 @@ return {
     
     welcome = {
         title = "Welcome to Lurnai Hub!",
-        remove = "Remove This Popup",
-        execute = "Execute Script"
+        message = "Thank you for choosing Lurnai Hub!\nWe're excited for you using our script!",
+        decline = "Maybe Later",
+        accept = "Start Lurnai!"
     },
     
     keySystem = {
