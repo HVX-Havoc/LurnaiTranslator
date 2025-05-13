@@ -15,7 +15,7 @@ Translator.AvailableLanguages = {
 }
 
 Translator.LanguageUrls = {
-    ["English"] = "https://raw.githubusercontent.com/HVX-Havoc/LurnaiTranslator/main/languages/English.lua",
+    ["English"] = "https://raw.githubusercontent.com/HVX-Havoc/LurnaiTranslator/main/languages/English.Lua",
     ["Spanish"] = "https://raw.githubusercontent.com/HVX-Havoc/LurnaiTranslator/main/languages/Spanish.lua",
     ["Portuguese"] = "https://raw.githubusercontent.com/HVX-Havoc/LurnaiTranslator/main/languages/Portuguese.lua",
     ["French"] = "https://raw.githubusercontent.com/HVX-Havoc/LurnaiTranslator/main/languages/French.lua",
