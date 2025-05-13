@@ -3,9 +3,7 @@ return {
     openButton = "Open Lurnai Hub",
     
     welcome = {
-        welcome.title = "Welcome to Lurnai Hub!",
-        welcome.decline = "Maybe Later",
-        welcome.accept = "Get Started"
+        welcome.title = "Welcome to Lurnai Hub!"
     },
     
     keySystem = {
