@@ -189,16 +189,140 @@ crystal = {
     }
 },
 
+stats = {
+    title = "Stats",
+    statusTitle = "Status:",
+    loading = "Loading stats...",
+    timeFormat = "%d Days %d Hours %d Minutes %d Seconds",
+    statusFormat = "Time: %s\nPlayers: %d\n" ..
+                  "Strength: %s\n" ..
+                  "Rebirths: %d\n" ..
+                  "Durability: %s\n" ..
+                  "Agility: %s\n" ..
+                  "Kills: %d\n" ..
+                  "Brawls: %d\n" ..
+                  "Good Karma: %d\n" ..
+                  "Bad Karma: %d\n" ..
+                  "Muscle King Time: %s",
+    strengthEarnedTitle = "Strength Earned:",
+    strengthEarnedFormat = "Strength: %s\n" ..
+                          "Rebirths: %d\n" ..
+                          "Durability: %s\n" ..
+                          "Kills: %d\n" ..
+                          "Brawls: %d\n" ..
+                          "Good Karma: %d\n" ..
+                          "Bad Karma: %d\n" ..
+                          "Agility: %s\n" ..
+                          "Muscle King Time: %s",
+    strengthEarnedDefault = "Strength: 0\nRebirths: 0\nDurability: 0\nKills: 0\nBrawls: 0",
+    lookupTitle = "Lookup Player Stats",
+    selectPlayer = "Select Player",
+    refreshPlayerList = "Refresh Select Player",
+    lookupStatusTitle = "Lookup Status:",
+    lookupStatusDefault = "Select a player to view their stats",
     
-    stats = {
-        title = "Stats",
-        yourStats = "Your Stats",
-        statsDescription = "Here you can see your current game statistics"
+    strength = "Strength",
+    rebirths = "Rebirths",
+    kills = "Kills",
+    brawls = "Brawls",
+    durability = "Durability",
+    goodKarma = "Good Karma",
+    badKarma = "Bad Karma",
+    agility = "Agility",
+    muscleKingTime = "Muscle King Time",
+    time = "Time",
+    players = "Players",
+},
+
+    
+-- Add to your English.lua file
+webhook = {
+    information = {
+        title = "Webhook Information",
+        desc = "Set up Discord webhooks to receive notifications about your progress and game events."
     },
-    
-    webhook = {
-        title = "Webhook",
-        url = "Webhook URL",
-        enterUrl = "Enter your Discord webhook URL"
+    url = {
+        title = "Webhook URL",
+        placeholder = "Enter Discord webhook URL"
+    },
+    statsSelection = {
+        title = "Pick the stats you want sent every 10 minutes - 24 hours (your choice)",
+        desc = "Select which statistics you want to receive in your webhook notifications."
+    },
+    stats = {
+        title = "Stats"
+    },
+    gainsSelection = {
+        title = "Pick the Gains you want sent every 10 minutes - 24 hours (your choice)",
+        desc = "Select which gain statistics you want to receive in your webhook notifications."
+    },
+    gains = {
+        title = "Gain",
+        strength = "Strength Gained",
+        rebirths = "Rebirths Gained",
+        durability = "Durability Gained",
+        agility = "Agility Gained",
+        kills = "Kills Gained",
+        brawls = "Brawls Gained",
+        goodKarma = "Good Karma Gained",
+        badKarma = "Bad Karma Gained",
+        muscleKingTime = "Muscle King Time Gained"
+    },
+    timeSelection = {
+        title = "Pick the Time you want sent every 10 minutes - 24 hours (your choice)",
+        desc = "Select the interval at which you want to receive webhook notifications."
+    },
+    time = {
+        title = "Time",
+        tenMinutes = "10 Minutes",
+        thirtyMinutes = "30 Minutes",
+        oneHour = "1 Hour",
+        threeHours = "3 Hours",
+        sixHours = "6 Hours",
+        twelveHours = "12 Hours",
+        twentyFourHours = "24 Hours"
+    },
+    killNotifications = {
+        title = "If a 100T - 150Q Person Joins your game, and they die, it will show they died in your webhook",
+        desc = "Get notifications when high-value players join or die in your game.",
+        toggle = "Kill Notifications"
+    },
+    all = "All"
+},
+
+misc = {
+    teleport = {
+        title = "Teleport",
+        tinyIsland = "Tiny Island",
+        starterIsland = "Starter Island",
+        legendBeach = "Legend Beach",
+        frostGym = "Frost Gym",
+        mythicalGym = "Mythical Gym",
+        eternalGym = "Eternal Gym",
+        legendGym = "Legend Gym",
+        muscleKingGym = "Muscle King Gym",
+        jungleGym = "Jungle Gym",
+        lavaBrawl = "Lava Brawl",
+        beachBrawl = "Beach Brawl",
+        sandyBrawl = "Sandy Brawl",
+        noWheelIsland = "No Wheel Island"
+    },
+    performance = {
+        title = "Performance",
+        reduceLag = "Reduce Lag",
+        antiCrash = "Anti-Crash",
+        preventLag = "Prevent Lag"
+    },
+    visual = {
+        title = "Visual",
+        screenWhite = "Show Screen White",
+        screenBlack = "Show Screen Black"
+    },
+    notification = {
+        hubLoaded = "Lurnai Hub Loaded",
+        welcomeMessage = "Welcome to Lurnai Hub for Muscle Legends!"
+    }
+},
+
     }
 }
