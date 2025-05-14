@@ -181,7 +181,11 @@ crystal = {
         jungle = "Jungle Crystal"
     },
     rarities = {
-        common = "Common"
+        Basic = "Basic",
+        Advanced = "Advanced",
+        Rare = "Rare",
+        Epic = "Epic",
+        Unique = "Unique"
     }
 },
 
