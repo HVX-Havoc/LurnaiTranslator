@@ -234,8 +234,6 @@ stats = {
     players = "Players",
 },
 
-    
--- Add to your English.lua file
 webhook = {
     information = {
         title = "Webhook Information",
