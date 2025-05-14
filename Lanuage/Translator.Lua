@@ -568,3 +568,6 @@ Translator:SelectAndLoadLanguage(function(languageCode, languageData)
     
     InitializeUI()
 end)
+
+
+function InitializeUI()
