@@ -10,7 +10,7 @@ return {
     },
     
     keySystem = {
-        note = "Join our Discord server to get the key: discord.gg/lurnai"
+        note = "Join our Discord server to get the key: discord.gg/jWpUjJta4u"
     },
     
     tabs = {
@@ -38,7 +38,7 @@ return {
     
     home = {
         welcome = "Welcome to Lurnai Hub",
-        welcomeDesc = "The ultimate script for Muscle Legends",
+        welcomeDesc = "by Havoc!",
         discord = "Discord",
         discordInvite = "Discord Invite",
         turnOffEverything = "Turn Off Everything"
@@ -63,7 +63,6 @@ return {
         noclip = "NoClip",
         size = "Size",
         sizeAmount = "Size Amount",
-        enterSizeMultiplier = "Enter size multiplier",
         autoSetSize = "Auto Set Size"
     },
     
@@ -94,24 +93,98 @@ return {
         autoJoinBrawl = "Auto Join Brawl",
         autoWinBrawl = "Auto Win Brawl"
     },
+
+    gyms = {
+        tinyIsland = "Tiny Island",
+        starterIsland = "Starter Island",
+        legendBeach = "Legend Beach",
+        frostGym = "Frost Gym",
+        mythicalGym = "Mythical Gym",
+        eternalGym = "Eternal Gym",
+        legendGym = "Legend Gym",
+        muscleKingGym = "Muscle King Gym",
+        jungleGym = "Jungle Gym",
+        beach = "Beach"
+    },
+    
+    workouts = {
+        benchPress = "Bench Press",
+        squat = "Squat",
+        deadlift = "Deadlift",
+        pullUp = "Pull Up",
+        boulder = "Boulder",
+        treadmill = "Treadmill",
+        weights = "Weights"
+    },
     
     rebirths = {
         title = "Rebirths",
+        statistics = "Rebirth Statistics",
+        loadingStats = "Loading stats...",
+        nextGlitchable = "Next Glitchable Rebirth",
+        targetRebirths = "Target Rebirths",
+        enterTargetAmount = "Enter target rebirth amount",
+        autoRebirthsOnTarget = "Auto Rebirths On Target Rebirths",
+        autoRebirths = "Auto Rebirths",
         autoRebirth = "Auto Rebirth",
         selectAmount = "Select Amount"
     },
     
     killer = {
         title = "Killer",
+        selectWhitelist = "Select Whitelist",
+        refreshWhitelist = "Refresh Select Whitelist",
+        chooseKillType = "Choose Kill Type",
+        autoKill = "Auto Kill",
+        autoKillEvilKarma = "Auto Kill Evil Karma",
+        autoKillGoodKarma = "Auto Kill Good Karma",
         killAura = "Kill Aura",
-        autoCollectChests = "Auto Collect Chests"
+        farmingKillPlayer = "Farming Kill Player",
+        selectPlayer = "Select Player",
+        refreshPlayerList = "Refresh Select Player",
+        autoKillPlayer = "Auto Kill Player",
+        spectatePlayer = "Spectate Player",
+        killTypes = {
+            normal = "Normal",
+            teleport = "Teleport",
+            platform = "Platform"
+        }
     },
     
-    crystal = {
-        title = "Crystal",
-        autoHatch = "Auto Hatch",
-        selectEgg = "Select Egg"
+crystal = {
+    title = "Crystal",
+    selectCrystal = "Select Crystal",
+    selectPetsToDelete = "Select Pets to Delete",
+    autoOpenCrystal = "Auto Open Crystal",
+    
+    petsAndAuras = "Shop Pets & Auras",
+    selectRarity = "Select Rarity",
+    selectPet = "Select Pet",
+    autoBuyPet = "Auto Buy Pet",
+    selectAura = "Select Aura",
+    autoBuyAura = "Auto Buy Aura",
+    goodAurasAndPets = "Good Auras & Pets",
+    autoMuscleKing = "Auto Muscle King",
+    autoEntropicBlast = "Auto Entropic Blast",
+    autoNeon = "Auto Neon",
+    autoDarkStar = "Auto DarkStar",
+    
+    types = {
+        blue = "Blue Crystal",
+        green = "Green Crystal",
+        frost = "Frost Crystal",
+        mythical = "Mythical Crystal",
+        inferno = "Inferno Crystal",
+        legend = "Legend Crystal",
+        muscleElite = "Muscle Elite Crystal",
+        galaxyOracle = "Galaxy Oracle Crystal",
+        jungle = "Jungle Crystal"
     },
+    rarities = {
+        common = "Common"
+    }
+},
+
     
     stats = {
         title = "Stats",
