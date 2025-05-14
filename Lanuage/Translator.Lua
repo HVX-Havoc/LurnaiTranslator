@@ -1,5 +1,4 @@
 local Translator = {}
-
 Translator.AvailableLanguages = {
     ["English"] = {name = "English", flag = "🇺🇸"},
     ["Spanish"] = {name = "Español", flag = "🇪🇸"},
@@ -82,7 +81,7 @@ function Translator:CreateLanguageUI(callback)
     
     local MainFrame = Instance.new("Frame")
     MainFrame.Name = "MainFrame"
-    MainFrame.Size = UDim2.new(0, 300, 0, 400)
+    MainFrame.Size = UDim2.new(0, 250, 0, 320)
     MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
     MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
     MainFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 30)
@@ -91,7 +90,7 @@ function Translator:CreateLanguageUI(callback)
     MainFrame.Parent = ScreenGui
     
     local UICorner = Instance.new("UICorner")
-    UICorner.CornerRadius = UDim.new(0, 12)
+    UICorner.CornerRadius = UDim.new(0, 10)
     UICorner.Parent = MainFrame
     
     local Shadow = Instance.new("ImageLabel")
@@ -99,7 +98,7 @@ function Translator:CreateLanguageUI(callback)
     Shadow.AnchorPoint = Vector2.new(0.5, 0.5)
     Shadow.BackgroundTransparency = 1
     Shadow.Position = UDim2.new(0.5, 0, 0.5, 0)
-    Shadow.Size = UDim2.new(1, 40, 1, 40)
+    Shadow.Size = UDim2.new(1, 30, 1, 30)
     Shadow.ZIndex = -1
     Shadow.Image = "rbxassetid://6014261993"
     Shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
@@ -118,9 +117,8 @@ function Translator:CreateLanguageUI(callback)
     
     local Logo = Instance.new("ImageLabel")
     Logo.Name = "Logo"
-    Logo.Size = UDim2.new(0, 60, 0, 60)
-    Logo.Position = UDim2.new(0.5, 0, 0, 25)
-    Logo.AnchorPoint = Vector2.new(0.5, 0)
+    Logo.Size = UDim2.new(0, 40, 0, 40)
+    Logo.Position = UDim2.new(0, 15, 0, 15)
     Logo.BackgroundTransparency = 1
     Logo.Image = "rbxassetid://14133403086"
     Logo.ImageTransparency = 1
@@ -128,32 +126,34 @@ function Translator:CreateLanguageUI(callback)
     
     local Title = Instance.new("TextLabel")
     Title.Name = "Title"
-    Title.Size = UDim2.new(1, 0, 0, 30)
-    Title.Position = UDim2.new(0, 0, 0, 90)
+    Title.Size = UDim2.new(0, 150, 0, 25)
+    Title.Position = UDim2.new(0, 65, 0, 15)
     Title.BackgroundTransparency = 1
     Title.Text = "Lurnai Hub"
     Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-    Title.TextSize = 24
+    Title.TextSize = 18
     Title.Font = Enum.Font.GothamBold
+    Title.TextXAlignment = Enum.TextXAlignment.Left
     Title.TextTransparency = 1
     Title.Parent = MainFrame
     
     local Subtitle = Instance.new("TextLabel")
     Subtitle.Name = "Subtitle"
-    Subtitle.Size = UDim2.new(1, 0, 0, 20)
-    Subtitle.Position = UDim2.new(0, 0, 0, 120)
+    Subtitle.Size = UDim2.new(0, 150, 0, 20)
+    Subtitle.Position = UDim2.new(0, 65, 0, 35)
     Subtitle.BackgroundTransparency = 1
     Subtitle.Text = "Select Your Language"
     Subtitle.TextColor3 = Color3.fromRGB(180, 180, 180)
-    Subtitle.TextSize = 14
+    Subtitle.TextSize = 12
     Subtitle.Font = Enum.Font.Gotham
+    Subtitle.TextXAlignment = Enum.TextXAlignment.Left
     Subtitle.TextTransparency = 1
     Subtitle.Parent = MainFrame
     
     local LanguageContainer = Instance.new("Frame")
     LanguageContainer.Name = "LanguageContainer"
-    LanguageContainer.Size = UDim2.new(0, 260, 0, 200)
-    LanguageContainer.Position = UDim2.new(0.5, 0, 0, 150)
+    LanguageContainer.Size = UDim2.new(0, 230, 0, 210)
+    LanguageContainer.Position = UDim2.new(0.5, 0, 0, 70)
     LanguageContainer.AnchorPoint = Vector2.new(0.5, 0)
     LanguageContainer.BackgroundTransparency = 1
     LanguageContainer.BorderSizePixel = 0
@@ -171,11 +171,11 @@ function Translator:CreateLanguageUI(callback)
     ScrollFrame.Parent = LanguageContainer
     
     local UIListLayout = Instance.new("UIListLayout")
-    UIListLayout.Padding = UDim.new(0, 8)
+    UIListLayout.Padding = UDim.new(0, 5)
     UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
     UIListLayout.Parent = ScrollFrame
     
-    local ButtonHeight = 40
+    local ButtonHeight = 32
     
     local sortedLanguages = {}
     for langCode, langInfo in pairs(self.AvailableLanguages) do
@@ -199,13 +199,13 @@ function Translator:CreateLanguageUI(callback)
         Button.Parent = ScrollFrame
         
         local ButtonCorner = Instance.new("UICorner")
-        ButtonCorner.CornerRadius = UDim.new(0, 8)
+        ButtonCorner.CornerRadius = UDim.new(0, 6)
         ButtonCorner.Parent = Button
         
         local SelectionIndicator = Instance.new("Frame")
         SelectionIndicator.Name = "SelectionIndicator"
-        SelectionIndicator.Size = UDim2.new(0, 3, 1, -10)
-        SelectionIndicator.Position = UDim2.new(0, 5, 0, 5)
+        SelectionIndicator.Size = UDim2.new(0, 3, 1, -8)
+        SelectionIndicator.Position = UDim2.new(0, 4, 0, 4)
         SelectionIndicator.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
         SelectionIndicator.BorderSizePixel = 0
         SelectionIndicator.Visible = (langCode == CurrentLanguage)
@@ -218,24 +218,24 @@ function Translator:CreateLanguageUI(callback)
         
         local FlagLabel = Instance.new("TextLabel")
         FlagLabel.Name = "FlagLabel"
-        FlagLabel.Size = UDim2.new(0, 30, 0, 30)
-        FlagLabel.Position = UDim2.new(0, 15, 0.5, 0)
+        FlagLabel.Size = UDim2.new(0, 24, 0, 24)
+        FlagLabel.Position = UDim2.new(0, 12, 0.5, 0)
         FlagLabel.AnchorPoint = Vector2.new(0, 0.5)
         FlagLabel.BackgroundTransparency = 1
         FlagLabel.Text = langInfo.flag
-        FlagLabel.TextSize = 20
+        FlagLabel.TextSize = 16
         FlagLabel.Font = Enum.Font.GothamBold
         FlagLabel.TextTransparency = 1
         FlagLabel.Parent = Button
         
         local NameLabel = Instance.new("TextLabel")
         NameLabel.Name = "NameLabel"
-        NameLabel.Size = UDim2.new(1, -60, 1, 0)
-        NameLabel.Position = UDim2.new(0, 50, 0, 0)
+        NameLabel.Size = UDim2.new(1, -50, 1, 0)
+        NameLabel.Position = UDim2.new(0, 40, 0, 0)
         NameLabel.BackgroundTransparency = 1
         NameLabel.Text = langInfo.name
         NameLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-        NameLabel.TextSize = 14
+        NameLabel.TextSize = 12
         NameLabel.Font = Enum.Font.Gotham
         NameLabel.TextXAlignment = Enum.TextXAlignment.Left
         NameLabel.TextTransparency = 1
@@ -280,26 +280,46 @@ function Translator:CreateLanguageUI(callback)
         end)
     end
     
-    ScrollFrame.CanvasSize = UDim2.new(0, 0, 0, UIListLayout.AbsoluteContentSize.Y + 10)
+    ScrollFrame.CanvasSize = UDim2.new(0, 0, 0, UIListLayout.AbsoluteContentSize.Y + 5)
     
     local ConfirmButton = Instance.new("TextButton")
     ConfirmButton.Name = "ConfirmButton"
-    ConfirmButton.Size = UDim2.new(0, 200, 0, 40)
-    ConfirmButton.Position = UDim2.new(0.5, 0, 1, -60)
+    ConfirmButton.Size = UDim2.new(0.9, 0, 0, 30)
+    ConfirmButton.Position = UDim2.new(0.5, 0, 1, -40)
     ConfirmButton.AnchorPoint = Vector2.new(0.5, 0)
     ConfirmButton.BackgroundColor3 = Color3.fromRGB(0, 120, 215)
     ConfirmButton.BorderSizePixel = 0
     ConfirmButton.Text = "Confirm"
     ConfirmButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-    ConfirmButton.TextSize = 16
+    ConfirmButton.TextSize = 14
     ConfirmButton.Font = Enum.Font.GothamBold
     ConfirmButton.BackgroundTransparency = 1
     ConfirmButton.TextTransparency = 1
     ConfirmButton.Parent = MainFrame
     
     local ConfirmCorner = Instance.new("UICorner")
-    ConfirmCorner.CornerRadius = UDim.new(0, 8)
+    ConfirmCorner.CornerRadius = UDim.new(0, 6)
     ConfirmCorner.Parent = ConfirmButton
+    
+    local CloseButton = Instance.new("TextButton")
+    CloseButton.Name = "CloseButton"
+    CloseButton.Size = UDim2.new(0, 24, 0, 24)
+    CloseButton.Position = UDim2.new(1, -10, 0, 10)
+    CloseButton.AnchorPoint = Vector2.new(1, 0)
+    CloseButton.BackgroundColor3 = Color3.fromRGB(60, 60, 70)
+    CloseButton.BorderSizePixel = 0
+    CloseButton.Text = "✓"
+    CloseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    CloseButton.TextSize = 14
+    CloseButton.Font = Enum.Font.GothamBold
+    CloseButton.BackgroundTransparency = 1
+    CloseButton.TextTransparency = 1
+    CloseButton.ZIndex = 10
+    CloseButton.Parent = MainFrame
+    
+    local CloseCorner = Instance.new("UICorner")
+    CloseCorner.CornerRadius = UDim.new(1, 0)
+    CloseCorner.Parent = CloseButton
     
     ConfirmButton.MouseEnter:Connect(function()
         game:GetService("TweenService"):Create(ConfirmButton, TweenInfo.new(0.2), {
@@ -313,7 +333,19 @@ function Translator:CreateLanguageUI(callback)
         }):Play()
     end)
     
-    ConfirmButton.MouseButton1Click:Connect(function()
+    CloseButton.MouseEnter:Connect(function()
+        game:GetService("TweenService"):Create(CloseButton, TweenInfo.new(0.2), {
+            BackgroundColor3 = Color3.fromRGB(80, 80, 90)
+        }):Play()
+    end)
+    
+    CloseButton.MouseLeave:Connect(function()
+        game:GetService("TweenService"):Create(CloseButton, TweenInfo.new(0.2), {
+            BackgroundColor3 = Color3.fromRGB(60, 60, 70)
+        }):Play()
+    end)
+    
+    local function confirmSelection()
         CurrentLanguage = SelectedLanguage
         print("Selected language: " .. CurrentLanguage)
         
@@ -327,6 +359,7 @@ function Translator:CreateLanguageUI(callback)
         tweenService:Create(Title, outTweenInfo, {TextTransparency = 1}):Play()
         tweenService:Create(Subtitle, outTweenInfo, {TextTransparency = 1}):Play()
         tweenService:Create(ConfirmButton, outTweenInfo, {BackgroundTransparency = 1, TextTransparency = 1}):Play()
+        tweenService:Create(CloseButton, outTweenInfo, {BackgroundTransparency = 1, TextTransparency = 1}):Play()
         tweenService:Create(blur, outTweenInfo, {Size = 0}):Play()
         
         for _, child in pairs(ScrollFrame:GetChildren()) do
@@ -358,10 +391,25 @@ function Translator:CreateLanguageUI(callback)
                 callback(CurrentLanguage)
             end
         end)
+    end
+    
+    ConfirmButton.MouseButton1Click:Connect(confirmSelection)
+    CloseButton.MouseButton1Click:Connect(confirmSelection)
+    
+    local UserInputService = game:GetService("UserInputService")
+    local inputConnection
+    
+    inputConnection = UserInputService.InputBegan:Connect(function(input, gameProcessed)
+        if not gameProcessed and (input.KeyCode == Enum.KeyCode.Return or input.KeyCode == Enum.KeyCode.KeypadEnter) then
+            confirmSelection()
+            if inputConnection then
+                inputConnection:Disconnect()
+            end
+        end
     end)
     
     local tweenService = game:GetService("TweenService")
-    local inTweenInfo = TweenInfo.new(0.6, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
+    local inTweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Quart, Enum.EasingDirection.Out)
     
     MainFrame.BackgroundTransparency = 1
     Overlay.BackgroundTransparency = 1
@@ -371,6 +419,8 @@ function Translator:CreateLanguageUI(callback)
     Subtitle.TextTransparency = 1
     ConfirmButton.BackgroundTransparency = 1
     ConfirmButton.TextTransparency = 1
+    CloseButton.BackgroundTransparency = 1
+    CloseButton.TextTransparency = 1
     
     for _, child in pairs(ScrollFrame:GetChildren()) do
         if child:IsA("TextButton") then
@@ -403,6 +453,7 @@ function Translator:CreateLanguageUI(callback)
     
     task.delay(0.2, function()
         tweenService:Create(Logo, inTweenInfo, {ImageTransparency = 0}):Play()
+        tweenService:Create(CloseButton, inTweenInfo, {BackgroundTransparency = 0, TextTransparency = 0}):Play()
     end)
     
     task.delay(0.3, function()
@@ -416,7 +467,7 @@ function Translator:CreateLanguageUI(callback)
     task.delay(0.5, function()
         for i, child in ipairs(ScrollFrame:GetChildren()) do
             if child:IsA("TextButton") then
-                task.delay((i-1) * 0.05, function()
+                task.delay((i-1) * 0.03, function()
                     tweenService:Create(child, inTweenInfo, {BackgroundTransparency = 0}):Play()
                     
                     local nameLabel = child:FindFirstChild("NameLabel")
@@ -438,7 +489,7 @@ function Translator:CreateLanguageUI(callback)
         end
     end)
     
-    task.delay(0.7, function()
+    task.delay(0.6, function()
         tweenService:Create(ConfirmButton, inTweenInfo, {
             BackgroundTransparency = 0,
             TextTransparency = 0
@@ -484,4 +535,36 @@ function Translator:SelectAndLoadLanguage(callback)
     return selectedLanguage
 end
 
-return Translator
+local Lang = {}
+
+function GetTranslation(key)
+    if not key then return "MISSING_KEY" end
+    
+    local parts = string.split(key, ".")
+    local current = Lang
+    
+    for _, part in ipairs(parts) do
+        if current and current[part] then
+            current = current[part]
+        else
+            return key
+        end
+    end
+    
+    if type(current) == "string" then
+        return current
+    else
+        return key
+    end
+end
+
+Translator:SelectAndLoadLanguage(function(languageCode, languageData)
+    Lang = languageData or {}
+    
+    if not languageData then
+        warn("Failed to load language data, falling back to English")
+        Lang = Translator:LoadLanguage("English") or {}
+    end
+    
+    InitializeUI()
+end)
