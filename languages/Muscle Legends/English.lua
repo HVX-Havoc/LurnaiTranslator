@@ -73,6 +73,8 @@ return {
         autoFarmOnSelected = "Auto Farm On Selected",
         farmingGeneral = "Farming General",
         autoFarmWeight = "Auto Farm Weight",
+        selectrock = "Select Rock",
+        autofarmrock = "Auto Farm Rock",
         autoFarmPushups = "Auto Farm Pushups",
         autoFarmSitups = "Auto Farm Situps",
         autoFarmPunch = "Auto Farm Punch",
@@ -116,6 +118,18 @@ return {
         treadmill = "Treadmill",
         weights = "Weights"
     },
+
+rock = {
+    tinyrock = "Tiny Rock",
+    punchingrock = "Punching Rock",
+    goldenrock = "Golden Rock",
+    frostrock = "Frost Rock",
+    mythicalrock = "Mythical Rock",
+    eternalrock = "Eternal Rock",
+    legendrock = "Legend Rock",
+    musclekingrock = "Muscle King Rock",
+    junglerock = "Jungle Rock"
+},
     
     rebirths = {
         title = "Rebirths",
