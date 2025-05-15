@@ -16,6 +16,8 @@ return {
     tabs = {
         home = "Home",
         homeDesc = "Home Tab",
+        autofarm = "AutoFarm Tab",
+        autofarmDesc = "AutoFarm",
         main = "Main",
         mainDesc = "Main Tab",
         rebirths = "Rebirths",
@@ -64,6 +66,19 @@ return {
         size = "Size",
         sizeAmount = "Size Amount",
         autoSetSize = "Auto Set Size"
+    },
+
+    autofarm = {
+      gyms = "Gyms",
+      starterIsland = "Starter Island",
+      legendBeach = "Legend Beach",
+      frostgym = "Frost Gym",
+      mythicalGym = "Mythical Gym",
+      eternalGym = "Inferno Gym",
+      legendGym = "Legend Gym",
+      muscleKingGym = "Muscle King Gym",
+      jungleGym = "Jungle Gym",
+      autoFarm = "Auto Farm"
     },
     
     main = {
