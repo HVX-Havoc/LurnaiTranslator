@@ -78,7 +78,8 @@ return {
       legendGym = "Legend Gym",
       muscleKingGym = "Muscle King Gym",
       jungleGym = "Jungle Gym",
-      autoFarm = "Auto Farm"
+      autoFarm = "Auto Farm",
+      farm = "Auto Farm"
     },
     
     main = {
