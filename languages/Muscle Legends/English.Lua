@@ -71,6 +71,7 @@ return {
     autofarm = {
       gyms = "Gyms",
       starterIsland = "Starter Island",
+      largerock = "Large Rock",
       legendBeach = "Legend Beach",
       frostgym = "Frost Gym",
       mythicalGym = "Mythical Gym",
