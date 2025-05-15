@@ -79,7 +79,8 @@ return {
       muscleKingGym = "Muscle King Gym",
       jungleGym = "Jungle Gym",
       autoFarm = "Auto Farm",
-      farm = "Auto Farm"
+      farm = "Auto Farm",
+      rocks = "Rocks"
     },
     
     main = {
